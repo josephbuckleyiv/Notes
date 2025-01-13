@@ -1,7 +1,7 @@
 ## Use
 
 When injesting events from disparate sources. 
-Remember. It makes your life easier, not more difficult. This will be the major react pitfall.
+Remember. It makes your life easier, not more difficult. This will be the major React pitfall.
 
 
 ## Library
