@@ -16,3 +16,4 @@ BGP speaker - communicates/co-ordinates with BGP speakers in other AS.
 The result of BGP is a complete-path.
 Policy is made the concern of whoever gets the path.
 Loop-prevention is naively done by seeing if I (the node who is calculating the path) see myself in the complete path.
+This requires uniquity of AS idenitifer -- currently these are 32-bit ints assigned by central authority.
