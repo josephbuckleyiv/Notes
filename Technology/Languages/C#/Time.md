@@ -9,4 +9,8 @@ public static double Unix()
   return (double)timeSpan.TotalMilliseconds;
 }
 ```
-UTC is the co-ordinated standard for regulating clock times throughout the world. UtcNow returns the by definition least opinionated reading of time. Assume endpoints know what to do with time, e.g a browser may convert it for the user's pleasure. That way a huawei in timbuktu and a Canadian supercomputer both are served the same digits, and they choose what they want to do with it.
+UTC is the co-ordinated standard for regulating clock times throughout the world. UtcNow returns the least opinionated clocktime 'by definition.' Assume endpoints know what to do with time, e.g a browser may convert it for the user's pleasure. That way a huawei in Timbuktu and a Canadian supercomputer both are served the same digits, and they choose what they want to do with it. // 
+As a result, we slot it into the query parameters, with maybe something like 'zis:
+```
+var query = $"https://localhost:69?time={eunuchsTime}"
+```
