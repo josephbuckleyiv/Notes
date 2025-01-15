@@ -7,4 +7,4 @@ This corresponds to the situation where,
   - Node receives request and has no other dependencies: DECISION: The node asking me must be fine, and I depend on it. And I'm fine. So tell the Node I'm fine.
 
   ## Our goal is to avoid caching or state.
-  In one fell swoop, we can see if the entire system is up and running. If it isn't, something's afoot, and we leave it to telemetry and another system to do the forensics and damage control.
+  In one fell swoop, we can see if the entire system is up and running. If it isn't, something's afoot, and we leave it to telemetry or another mechanism to do the forensics and damage control.
