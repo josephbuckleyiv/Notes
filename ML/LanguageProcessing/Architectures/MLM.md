@@ -28,4 +28,7 @@ pairs of labeled sentences are presented to the model to produce the h outputs f
 the pair. To perform classication, [CLS] vector is multiplied by a set of learning classication weights and passed through a softmax. 
 - Example: NLI [ Natural Language Inference ] a model is presented with a pair of sentences and must classify the relationship.
 ### Sequence Labeling
-Usually for named entity recognition. PER (person), LOC (location), ORG (organization) or GPE (geo-politcal entity).
+Usually for named entity recognition. PER (person), LOC (location), ORG (organization) or GPE (geo-politcal entity). Difficulty in that a Named-Entity might be all of these e.g Washington \ 
+A standard approach is to use ___BIO___ tagging, _behind_, _inside_, and _outside_, all these referring to a certain span of interest. \
+For a single feedward layer, the set of weights is _Wk_ of size [d x k] where k is the number of tags for the task. Take argmax over the values k (token types).
+__Evaluated__ by recall, precision and F1 Measure. NOTE: Using entities as the unit of response but words as the unit of training.
