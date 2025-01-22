@@ -51,7 +51,7 @@ Sort via an index. If you can't define an index, use limit. Remember MongoDB alw
 
 ### Element Match
 ```
-db.inventory.find({variations: {$elemMatch: { varitian: "Blue", quantity: {$gte : 7}} })
+db.inventory.find({variations: {$elemMatch: { variation: "Blue", quantity: {$gte : 7}} })
 ```
 
 ### Push, Pop
