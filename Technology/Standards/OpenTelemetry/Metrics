@@ -1,0 +1,21 @@
+# Metrics
+Remember OpenTelemetry is way of _thinking_ about Telemetry.
+## Terminology
+### Counter
+Value that can only go up -- e.g website visits. 
+### Asynchronous Counter
+Same as counter but collected _once_ for each export. Used if you don't have access to continuous 
+increments.
+### UpDown Counter
+Counter that can go ... wait for it... up and down e.g
+### Asynchronous UpDown Counter
+### Gauge
+Measures a current value at the time it is read e.g CPU usage.
+### Asynchrnonous Gauge
+### Histogram
+A client-side aggregation of values. Good choice if you are interested in value statistics.
+### Metrics Provider
+Created once per program.
+### Aggregation
+Technique whereby a large number of measurements are combined into either exact or estimated stats
+about metric events that took place during a time window.
