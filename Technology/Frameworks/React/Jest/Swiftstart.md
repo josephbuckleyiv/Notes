@@ -20,3 +20,12 @@ Use it(@param1, @param2)  : where param1 is a string description, and param2 is 
   expect(result).toBe(3)
 })
 ```
+
+## Some Keywords
+### toBe
+### toEqual
+### Describe
+This is used to bundle various tests together.
+### toBeClose
+### toBeGreaterThan
+### toBeLessThanOrEqual
